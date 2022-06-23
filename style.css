@@ -3,6 +3,7 @@ display: flex;
 flex-direction: column;
 font-size: 18px;
 margin: 0px;
+font-family: 'Roboto', Times, sans-serif;
 
 }
 
@@ -11,7 +12,7 @@ margin: 0px;
     display: flex;
     color: #e5E7EB;
     align-items: center;
-    padding: 0px 150px;
+    padding: 20px 150px;
 }
 
 .navbar {
@@ -20,16 +21,36 @@ margin: 0px;
 
 .header {
     padding-bottom: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1 0 auto;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    max-width: 400px;
 }
 
 h1, .logo {
     color: #F9FAF8;
     font-weight: bolder;
+    margin: 0px;
 }
 
 h1 {
     font-size: 48px;
-    
+}
+
+h2 {
+    text-align: center;
+}
+
+h3, p {
+    margin: 0px;
 }
 
 ul {
@@ -40,4 +61,104 @@ ul {
 
 .logo {
     font-size: 24px;
+}
+
+.sign-up {
+    background-color: #3882f6;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+
+.img-container {
+    overflow: hidden;
+    margin: 20px 0px;
+    max-width: 500px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 150px;
+    flex: 1 1 auto;
+    }
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 150px;
+    align-items: center;
+}
+
+.img-border {
+    height: 225px;
+    width: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.main-img {
+    max-height: 100%;
+}
+
+.quote-wrapper {
+    background-color: #E5E7EB;
+    flex: 1 1 auto;
+    padding: 100px 150px;
+}
+
+.author {
+    text-align: end;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    padding: 30px 100px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sign-up.inverted {
+    border: 2px solid white;
+    
+}
+
+.footer {
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 30px;
 }
